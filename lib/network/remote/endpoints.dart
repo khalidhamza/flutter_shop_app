@@ -1,0 +1,10 @@
+const String apiBasePath = 'https://student.valuxapps.com/api';
+const String loginEndpoint = '/login';
+const String registerEndpoint = '/register';
+const String homeEndpoint = '/home';
+const String categoriesEndpoint = '/categories';
+const String toggleFavoriteEndpoint = '/favorites';
+const String favoriteEndpoint = '/favorites';
+const String profileEndpoint = '/profile';
+const String updateProfileEndpoint = '/update-profile';
+const String productsSearchEndpoint = '/products/search';

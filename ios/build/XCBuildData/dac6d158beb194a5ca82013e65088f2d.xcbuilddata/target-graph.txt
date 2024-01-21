@@ -1,0 +1,13 @@
+Target dependency graph (5 targets)
+Target 'Pods-Runner' in project 'Pods'
+➜ Explicit dependency on target 'Flutter' in project 'Pods'
+➜ Explicit dependency on target 'Toast' in project 'Pods'
+➜ Explicit dependency on target 'fluttertoast' in project 'Pods'
+➜ Explicit dependency on target 'shared_preferences_foundation' in project 'Pods'
+Target 'shared_preferences_foundation' in project 'Pods'
+➜ Explicit dependency on target 'Flutter' in project 'Pods'
+Target 'fluttertoast' in project 'Pods'
+➜ Explicit dependency on target 'Flutter' in project 'Pods'
+➜ Explicit dependency on target 'Toast' in project 'Pods'
+Target 'Toast' in project 'Pods' (no dependencies)
+Target 'Flutter' in project 'Pods' (no dependencies)
