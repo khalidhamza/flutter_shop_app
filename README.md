@@ -51,7 +51,7 @@ A Flutter-based e-commerce application with onboarding, authentication, and them
 ### Installation
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/khalidhamza/flutter_shop_app.git
 cd shop_app
 flutter pub get
 ```
