@@ -1,16 +1,73 @@
-# shop_app
+# Shop App
 
-Shpping App
+A Flutter-based e-commerce application with onboarding, authentication, and theming support. The app uses BLoC for state management and local storage for persisting user preferences and authentication tokens.
+
+## Features
+
+- Onboarding flow for new users
+- User authentication (login)
+- Home layout for authenticated users
+- Light and dark theme support
+- State management using BLoC
+- Persistent storage using shared preferences
+
+## Project Structure
+
+- `lib/main.dart`: App entry point, theme and navigation logic
+- `lib/layout/home_layout.dart`: Main app layout after login
+- `lib/modules/auth/login_screen.dart`: Login screen
+- `lib/modules/onboarding/onboarding_screen.dart`: Onboarding flow
+- `lib/shared/cubit/`: BLoC Cubit and states
+- `lib/shared/constants.dart`: App-wide constants
+- `lib/shared/styles/themes.dart`: Light and dark theme definitions
+- `lib/network/local/local_storage.dart`: Local storage helper
+
+## App Logic
+
+1. **Initialization**:  
+   - Ensures Flutter bindings are initialized.
+   - Sets up BLoC observer.
+   - Initializes local storage.
+
+2. **Startup Flow**:  
+   - Checks if onboarding is completed.
+   - Checks for a saved user token.
+   - Navigates to:
+     - Onboarding screen (if not seen)
+     - Login screen (if onboarding seen but not logged in)
+     - Home layout (if logged in)
+
+3. **Theming**:  
+   - Reads theme preference from local storage.
+   - Supports dynamic switching between light and dark themes via BLoC.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+git clone <repository-url>
+cd shop_app
+flutter pub get
+```
+
+### Running
+
+```sh
+flutter run
+```
+
+## Dependencies
+
+- `flutter_bloc`
+- `shared_preferences`
+- `flutter`
+
+## License
+
+This project is licensed under the MIT License.
